@@ -6,6 +6,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, blockquote, aside {
 }
 html, body {
     font-size: 12px;
+    background: #FFF;
 }
 @media screen and (min-width: 1024px) {
     html, body {
@@ -16,7 +17,7 @@ html, body {
     font-family: 'ZCOOL XiaoWei', sans-serif;
 }
 .app-section {
-    min-height: 110vh;
+    /* min-height: 110vh; */
 }
 [data-section-tone="light"] {
     color: #000;
@@ -34,7 +35,7 @@ html, body {
 }
 [data-section-type="generic"] aside,
 [data-section-type="generic"] h2 {
-    font-family: 'ZCOOL XiaoWei', sans-serif;
+    /* font-family: 'ZCOOL XiaoWei', sans-serif; */
     text-align: center;
 }
 [data-section-type="generic"] aside {
@@ -42,8 +43,45 @@ html, body {
     padding: 0 0 1.4rem;
 }
 [data-section-type="generic"] h2 {
-    font-size: 3.5rem;
+    font-size: 2.6rem;
 }
 [data-section-type="generic"] p {
     font-size: 1.5rem;
+}
+
+/* ---------------------------------------------- */
+.btn-block-major--text {
+    font-size: 1.4rem;
+    line-height: 3rem;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 0.4em 1.4em;
+    min-width: 12rem;
+    max-width: 18rem;
+    margin: 0 auto;
+}
+.btn-block-major--text:hover {
+    text-decoration: underline;
+}
+/* ---------------------------------------------- */
+
+.separation-line--dark--short {
+    background: #CCC;
+    height: 1px;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.separation-line--dark--full {
+    background: #CCC;
+    height: 1px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ---------------------------------------------- */
+body[data-navbar-solid-bgcolor="true"] .app-section[data-section-id="global--navbar"] {
+    background: #FEF044;
+    z-index: 9999;
 }
