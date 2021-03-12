@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+html, body, div, h1, h2, h3, h4, h5, h6, p, blockquote, aside {
+    font-family: -apple-system, 'SF Pro Text', 'Noto Sans', 'Roboto', sans-serif, 'Noto Sans SC', 'Noto Sans CJK SC', 'PingFang SC', 'Hiragino Sans GB';
+}
+html, body {
+    font-size: 12px;
+}
+@media screen and (min-width: 1024px) {
+    html, body {
+        font-size: 16px;
+    }
+}
+.font-stylish {
+    font-family: 'ZCOOL XiaoWei', sans-serif;
+}
+.app-section {
+    min-height: 110vh;
+}
+[data-section-tone="light"] {
+    color: #000;
+    /* background: #FFF; */
+}
+[data-section-tone="dark"] {
+    color: #FFF;
+    /* background: #000; */
+}
+[data-section-type="generic"] {
+    padding: 8rem 0 7rem;
+}
+[data-section-type="generic"] .section--generic-heading {
+    padding: 0 0 4rem;
+}
+[data-section-type="generic"] aside,
+[data-section-type="generic"] h2 {
+    font-family: 'ZCOOL XiaoWei', sans-serif;
+    text-align: center;
+}
+[data-section-type="generic"] aside {
+    font-size: 2.4rem;
+    padding: 0 0 1.4rem;
+}
+[data-section-type="generic"] h2 {
+    font-size: 3.5rem;
+}
+[data-section-type="generic"] p {
+    font-size: 1.5rem;
+}

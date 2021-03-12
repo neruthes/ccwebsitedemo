@@ -1,0 +1,8 @@
+@media screen and (min-width: 1024px) {
+    .viewport-selective--desktop { display: block; }
+    .viewport-selective--mobile { display: none; }
+}
+@media screen and (max-width: 1023px) {
+    .viewport-selective--desktop { display: none; }
+    .viewport-selective--mobile { display: block; }
+}
