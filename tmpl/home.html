@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>CryptoC</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/lib.css">
+        <link rel="stylesheet" href="/css/main-global.css">
+        <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <script type="text/javascript">
+        const PageConfigs = {
+            'needGlobalNavBar': true
+        };
+        </script>
+        <script type="text/javascript" src="/js/libs.js"></script>
+        <script type="text/javascript" src="/js/watchers.js"></script>
+        <script type="text/javascript" src="/js/HtmlModuleLoader.js"></script>
+        <script type="text/javascript" src="/js/main.js"></script>
+    </head>
+    <body>
+        <div class="grand-cont">
+            <script type="text/javascript">
+            HtmlModuleLoader.load('global--navbar', 0);
+            </script>
+            <div class="app-section" id="section-cover" data-section-id="home--cover" data-section-tone="light" style="min-height: 66vh;">
+                <style media="screen">
+                .app-section[data-section-id="home--cover"] {
+                    background: #FEF044;
+                    min-height: 70vh;
+                }
+                </style>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="" style="
+                                padding: calc(12vh + 70px) 0 14vh;
+                            ">
+                                <h1 class="font-stylish">
+                                    <span style="font-size: 3.8rem">封面横幅标题</span><br>
+                                    <span style="font-size: 2.4rem">我是配套的副标题</span><br>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-section" id="section-article-categories" data-section-id="home--article-categories" data-section-type="generic" data-section-tone="light" style="">
+                <style media="screen">
+                .app-section[data-section-id="home--article-categories"] {
+                }
+                </style>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section--generic-heading" style="">
+                                <h2 class="">
+                                    文章
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Featured article -->
+                        <div class="col-12">
+                            <style media="screen">
+                            .featured-article {
+                                text-align: left;
+                                margin: 0 0 2rem;
+                                background: #000 url('../img/solen-feyissa-zNPaUirWQpU-unsplash.jpg') scroll center no-repeat;
+                            }
+                            .featured-article-inner {
+                                position: relative;
+                            }
+                            .featured-article-inner a {
+                                color: inherit;
+                                background: rgba(254, 248, 68, 0.85);
+                                padding: calc(5rem + 7vh) 2rem 4rem;
+                                text-decoration: inherit;
+                                display: block;
+                                cursor: pointer;
+                                transition: all 200ms ease;
+                            }
+                            .featured-article-inner a:hover {
+                                background: rgba(254, 248, 68, 0.97);
+                                padding: calc(4rem + 6vh) 2rem 4rem;
+                            }
+                            .featured-article-headnote {
+                                color: #FEF044;
+                                font-size: 1.1rem;
+                                background: #000;
+                                /* border: 1px solid #000; */
+                                border-radius: 100px;
+                                position: absolute;
+                                top: 2rem;
+                                left: 2rem;
+                                padding: 0.3rem 0.8rem;
+                            }
+                            .featured-article-title {
+                                font-size: 2rem;
+                                padding: 0 0 1rem;
+                                margin: 0;
+                            }
+                            .featured-article-description > p {
+                                font-size: 1.2rem;
+                                line-height: 1.4em;
+                                max-width: 75%;
+                            }
+                            .featured-article-footnote {
+                                font-size: 1.1rem;
+                                opacity: 0.5;
+                            }
+                            .featured-article-footnote > span {
+                                margin-right: 2rem;
+                            }
+                            .featured-article-date {
+                                font-family: monospace;
+                            }
+                            </style>
+                            <div class="featured-article">
+                                <div class="featured-article-inner">
+                                    <a class="" style="display: block;">
+                                        <div class="featured-article-headnote">
+                                            最新头条
+                                        </div>
+                                        <h2 class="featured-article-title" style="text-align: left;">我是文章标题</h2>
+                                        <div class="featured-article-description">
+                                            <p>我是文章摘要，我是文章摘要，我是文章摘要，我是文章摘要，我是文章摘要，我是文章摘要，我是文章摘要，我是文章摘要，我是文章摘要，我是文章摘要……</p>
+                                        </div>
+                                        <div class="featured-article-footnote">
+                                            <span class="featured-article-date">2021-04-01 14:53</span>
+                                            <span class="featured-article-author">约翰史密斯</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <script type="text/javascript">
+                                document.querySelector('.featured-article-inner a').style.height = document.querySelector('.featured-article-inner a').offsetHeight + 'px';
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <style media="screen">
+                        .app-section[data-section-id="home--article-categories"] .categorycover-outer {
+                            color: #000;
+                            text-decoration: none;
+                            background: url('../img/solen-feyissa-zNPaUirWQpU-unsplash.jpg') scroll center no-repeat;
+                            background-size: cover;
+                            padding: 0;
+                            margin: 0 0 20px;
+                            display: block;
+                            position: relative;
+                            top: 0px;
+                            left: 0px;
+                            transition: all 180ms ease;
+                        }
+                        .app-section[data-section-id="home--article-categories"] .categorycover-outer:hover {
+                            transform: scale(1.05);
+                        }
+                        .app-section[data-section-id="home--article-categories"] .categorycover {
+                            background: rgba(254, 248, 68, 0.85);
+                            text-align: center;
+                            text-decoration: none;
+                            display: block;
+                            min-height: 260px;
+                            padding: 2rem 1.2rem;
+                        }
+                        .app-section[data-section-id="home--article-categories"] .categorycover h3 {
+                            font-size: 1.8rem;
+                            text-align: center;
+                            padding: 0 0 0.4em;
+                        }
+                        .app-section[data-section-id="home--article-categories"] .categorycover p {
+                            font-size: 1.2rem;
+                            text-align: center;
+                        }
+                        .app-section[data-section-id="home--article-categories"] .categorycover:hover {
+
+                        }
+                        </style>
+                        <div class="col-6 col-md-6 col-lg-3 ">
+                            <a class="categorycover-outer" href="">
+                                <div class="categorycover">
+                                    <h3>分类 0x01</h3>
+                                    <p>这里是一段简介，这里是一段简介，这里是一段简介，这里是一段简介，这里是一段简介。</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 ">
+                            <a class="categorycover-outer" href="">
+                                <div class="categorycover">
+                                    <h3>分类 0x01</h3>
+                                    <p>这里是一段简介，这里是一段简介，这里是一段简介，这里是一段简介，这里是一段简介。</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 ">
+                            <a class="categorycover-outer" href="">
+                                <div class="categorycover">
+                                    <h3>分类 0x01</h3>
+                                    <p>这里是一段简介，这里是一段简介，这里是一段简介，这里是一段简介，这里是一段简介。</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 ">
+                            <a class="categorycover-outer" href="">
+                                <div class="categorycover">
+                                    <h3>分类 0x01</h3>
+                                    <p>这里是一段简介，这里是一段简介，这里是一段简介，这里是一段简介，这里是一段简介。</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="" style="padding-top: 50px;">
+                        <a class="btn-block-major--text" href="#">更多文章</a>
+                    </div>
+                </div>
+            </div>
+            <div class="separation-line--dark--short">
+            </div>
+            <div class="app-section" id="section-artworks" data-section-id="home--artworks" data-section-type="generic" data-section-tone="light" style="">
+                <style media="screen">
+                .app-section[data-section-id="home--artworks"] {
+                }
+                </style>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section--generic-heading" style="">
+                                <h2 class="">
+                                    画作
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <style media="screen">
+                        .app-section[data-section-id="home--artworks"] .artworkcover-outer {
+                            color: #000;
+                            text-decoration: none;
+                            /* background: url('../img/solen-feyissa-zNPaUirWQpU-unsplash.jpg') scroll center no-repeat; */
+                            /* background: #FFF scroll center no-repeat; */
+                            background-attachment: scroll;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            padding: 0;
+                            margin: 0 0 20px;
+                            display: block;
+                            position: relative;
+                            top: 0px;
+                            left: 0px;
+                            opacity: 0;
+                            transition: all 180ms ease;
+                        }
+                        body[data-onload="true"] .app-section[data-section-id="home--artworks"] .artworkcover-outer {
+                            opacity: 1;
+                        }
+                        .app-section[data-section-id="home--artworks"] .artworkcover-outer:hover {
+                            transform: scale(1.05);
+                        }
+                        .app-section[data-section-id="home--artworks"] .artworkcover {
+                            text-align: center;
+                            text-decoration: none;
+                            position: relative;
+                            display: block;
+                            height: 100%;
+                            padding: 2rem 1.2rem;
+                        }
+                        .app-section[data-section-id="home--artworks"] .artworkcover h3 {
+                            font-size: 1.8rem;
+                            text-align: center;
+                            padding: 0 0 0.4em;
+                        }
+                        .app-section[data-section-id="home--artworks"] .artworkcover p {
+                            font-size: 1.2rem;
+                            text-align: center;
+                            opacity: 0;
+                            position: absolute;
+                            top: calc(100% + 10px);
+                            left: 0;
+                            width: 100%;
+                            height: 1.8rem;
+                            transition: all 180ms ease;
+                        }
+                        .app-section[data-section-id="home--artworks"] .artworkcover p span.author-name {
+                            font-size: 1rem;
+                            color: #999;
+                            text-align: center;
+                            display: block;
+                        }
+                        .app-section[data-section-id="home--artworks"] .artworkcover-outer:hover p {
+                            opacity: 1;
+                        }
+                        </style>
+                        <div class="col-6 col-sm-6 col-lg-3 ">
+                            <a class="artworkcover-outer" href="" style="background-image: url('../img/solen-feyissa-zNPaUirWQpU-unsplash.jpg');">
+                                <div class="artworkcover">
+                                    <p><span class="artwork-title">我是标题</span><span class="author-name">Author Name</span></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-3 ">
+                            <a class="artworkcover-outer" href="" style="background-image: url('../img/hans-eiskonen-7VuFvHYrF0A-unsplash.jpg');">
+                                <div class="artworkcover">
+                                    <p><span class="artwork-title">我是标题</span><span class="author-name">Author Name</span></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-3 ">
+                            <a class="artworkcover-outer" href="" style="background-image: url('../img/xianyu-hao-T4F4f056wBs-unsplash.jpg');">
+                                <div class="artworkcover">
+                                    <p><span class="artwork-title">我是标题</span><span class="author-name">Author Name</span></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-6 col-lg-3 ">
+                            <a class="artworkcover-outer" href="" style="background-image: url('../img/hans-eiskonen-7VuFvHYrF0A-unsplash.jpg');">
+                                <div class="artworkcover">
+                                    <p><span class="artwork-title">我是标题</span><span class="author-name">Author Name</span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                    window.addEventListener('load', function () {
+                        nodes = document.querySelectorAll('.artworkcover-outer');
+                        nodes.forEach(function (node) {
+                            node.style.height = node.offsetWidth + 'px';
+                            node.style.opacity = '1';
+                        });
+                    });
+                    </script>
+                </div>
+                <div class="" style="padding-top: 90px;">
+                    <a class="btn-block-major--text" href="#">更多画作</a>
+                </div>
+            </div>
+
+            <div class="app-section" data-section-id="home--whatis" style="">
+                <style media="screen">
+                .app-section[data-section-id="home--whatis"] {
+                    font-size: 1.3rem;
+                    line-height: 1.8rem;
+                    background: #F0F0F0;
+                    padding: 80px 0;
+                }
+                </style>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <strong style="padding: 0 0 30px;">什么是开放艺术宇宙？</strong>
+                        </div>
+                        <div class="col-12 col-lg-8">
+                            <p>Blah blah blah...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-section" data-section-id="home--joinus" style="">
+                <style media="screen">
+                .app-section[data-section-id="home--joinus"] {
+                    font-size: 1.3rem;
+                    line-height: 1.8rem;
+                    background: #FFF;
+                    padding: 80px 0;
+                }
+                </style>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <strong style="padding: 0 0 30px;">是否有兴趣加入我们？</strong>
+                        </div>
+                        <div class="col-12 col-lg-8">
+                            <form id="form-joinus" class="row" action="index.html" method="post">
+                                <style media="screen">
+                                #form-joinus input {
+                                    height: 50px;
+                                    font-size: 1.2rem;
+                                    line-height: 40px;
+                                    display: inline-block;
+                                    vertical-align: top;
+                                    width: 100%;
+                                    padding: 5px 8px 0;
+                                    margin: 0 0 20px;
+                                }
+                                #form-joinus input[type="text"] {
+                                    /* width: calc(100% / 2 - 110px); */
+                                }
+                                #form-joinus input[type="submit"] {
+                                    /* vertical-align: bottom; */
+                                }
+                                </style>
+                                <div class="col-12 col-lg-4">
+                                    <input type="text" name="" value="" placeholder="名称">
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <input type="text" name="" value="" placeholder="邮箱地址">
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <input type="submit" name="" value="加入艺术宇宙">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-section" data-section-id="global--footer" style="">
+                <style media="screen">
+                .app-section[data-section-id="global--footer"] {
+                    font-size: 1.1rem;
+                    line-height: 1.5rem;
+                    /* background: #FFF; */
+                    background: #F0F0F0;
+                    padding: 80px 0;
+                }
+                </style>
+                <nav class="">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-9">
+                                This is the footer text. Write some content here.
+                            </div>
+                            <div class="col-12 col-lg-3">
+                                更小的区域，可以放二维码等内容
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <script type="text/javascript">
+            HtmlModuleLoader('global--footer', 0, {});
+            </script>
+        </div>
+    </body>
+</html>

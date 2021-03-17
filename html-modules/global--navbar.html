@@ -1,0 +1,84 @@
+<div class="app-section" data-section-id="global--navbar" style="">
+    <style media="screen">
+    .app-section[data-section-id="global--navbar"] {
+        font-size: 18px;
+        line-height: 38px;
+        background: rgba(0, 0, 0, 0.10);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 70px;
+    }
+    </style>
+    <nav class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="">
+                        <a href="" style="
+                            font-size: 28px;
+                            font-weight: 600;
+                            color: inherit;
+                            line-height: 40px;
+                            text-decoration: inherit;
+                            display: block;
+                            padding: 15px 10px 0;
+                        ">CryptoC</a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <style media="screen">
+                    .navbaritems {
+                        text-align: right;
+                    }
+                    .navbaritems li {
+                        display: inline-block;
+                    }
+                    .navbaritems li a {
+                        color: #000;
+                        line-height: 40px;
+                        text-decoration: none;
+                        display: block;
+                        height: 70px;
+                        padding: 15px 10px 0;
+                    }
+                    .navbaritems li a:hover {
+                        color: #FFF;
+                        background: rgba(0, 0, 0, 0.65);
+                    }
+                    .navbaritems li a.btn-ghost {
+                        line-height: 38px;
+                        border: 1px solid #000;
+                        border-radius: 6px;
+                        height: 40px;
+                        padding: 0 15px 0;
+                        margin: 0 10px 0;
+                    }
+                    </style>
+                    <div class="viewport-selective--desktop">
+                        <ul class="navbaritems">
+                            <li><a href="">文章</a></li>
+                            <li><a href="">交易</a></li>
+                            <li><a href="" class="btn-ghost">登录</a></li>
+                            <li><a href="" class="btn-ghost">注册</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function (e) {
+            if (PageConfigs['needGlobalNavBar'] !== true) {
+                document.body.setAttribute('data-navbar-solid-bgcolor', 'true');
+                return 0;
+            };
+            if (window.pageYOffset > document.querySelector('#section-cover').offsetHeight - 70) {
+                document.body.setAttribute('data-navbar-solid-bgcolor', 'true');
+            } else {
+                document.body.setAttribute('data-navbar-solid-bgcolor', 'false');
+            };
+        });
+    </script>
+</div>

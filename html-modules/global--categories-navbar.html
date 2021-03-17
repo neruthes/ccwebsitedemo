@@ -1,0 +1,56 @@
+<div class="app-section" data-section-id="global--categories-navbar" style="">
+    <style media="screen">
+    .app-section[data-section-id="global--categories-navbar"] {
+        font-size: 1.2rem;
+        line-height: 1.5em;
+        background: #FAFAFA;
+        /* height: 70px; */
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100vw;
+        height: auto;
+        z-index: 3000;
+    }
+    .app-section[data-section-id="global--categories-navbar"] ul {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    .app-section[data-section-id="global--categories-navbar"] ul li {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+    .app-section[data-section-id="global--categories-navbar"] ul li a {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 4px solid rgba(0, 0, 0, 0.0);
+        display: block;
+        padding: 12px 15px;
+        margin: 0;
+    }
+    .app-section[data-section-id="global--categories-navbar"] ul li a[data-categoryName="{{categoryName}}"],
+    .app-section[data-section-id="global--categories-navbar"] ul li a[data-isActiveCategory="true"] {
+        border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+    }
+    .app-section[data-section-id="global--categories-navbar"] ul li a:hover {
+        background: rgba(0, 0, 0, 0.1);
+    }
+    </style>
+    <nav class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="">
+                        <li><a data-categoryName="综合" href="">综合</a></li>
+                        <li><a data-categoryName="板块 1" href="">板块 1</a></li>
+                        <li><a data-categoryName="板块 2" href="">板块 2</a></li>
+                        <li><a data-categoryName="板块 3" href="">板块 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+</div>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>CryptoC</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/lib.css">
+        <link rel="stylesheet" href="/css/main-global.css">
+        <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="/js/libs.js"></script>
+        <script type="text/javascript" src="/js/watchers.js"></script>
+        <script type="text/javascript" src="/js/HtmlModuleLoader.js"></script>
+        <script type="text/javascript" src="/js/main.js"></script>
+    </head>
+    <body data-navbar-solid-bgcolor="true">
+        <div class="grand-cont">
+            <div class="" style="height: 200px;">
+            </div>
+            <script type="text/javascript">
+            HtmlModuleLoader.load('global--navbar', 0, {});
+            HtmlModuleLoader.load('global--categories-navbar', 0, { 'categoryName': '综合' });
+            </script>
+            <div class="app-section" id="section-article-categories" data-section-id="category--major-articles" data-section-type="generic" data-section-tone="light" style="">
+                <style media="screen">
+                .app-section[data-section-id="category--major-articles"] {
+                    padding: 12px;
+                }
+                </style>
+                <div class="container">
+                    <!-- <div class="row">
+                        <div class="col-12">
+                            <div class="section- -generic-heading" style="">
+                                <h2 class="">
+                                    文章
+                                </h2>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="row">
+                        <!-- Featured article -->
+                        <div class="col-12 col-lg-8">
+                            <style media="screen">
+                            .category-featured-article {
+                                text-align: left;
+                                margin: 0 0 24px;
+                                background: #000 url('../img/hans-eiskonen-7VuFvHYrF0A-unsplash.jpg') scroll center no-repeat;
+                            }
+                            .category-featured-article-inner {
+                                position: relative;
+                            }
+                            .category-featured-article-inner a {
+                                color: inherit;
+                                background: rgba(254, 248, 68, 0.85);
+                                padding: calc(7rem) 2rem 4rem;
+                                text-decoration: inherit;
+                                display: block;
+                                cursor: pointer;
+                                transition: all 200ms ease;
+                            }
+                            .category-featured-article-inner a:hover {
+                                background: rgba(254, 248, 68, 0.97);
+                                padding: calc(6.3rem) 2rem 4rem;
+                            }
+                            .category-featured-article-headnote {
+                                color: #FEF044;
+                                font-size: 1.1rem;
+                                background: #000;
+                                /* border: 1px solid #000; */
+                                border-radius: 100px;
+                                position: absolute;
+                                top: 2rem;
+                                left: 2rem;
+                                padding: 0.3rem 0.8rem;
+                            }
+                            .category-featured-article-title {
+                                font-size: 2rem;
+                                padding: 0 0 1rem;
+                                margin: 0;
+                            }
+                            .category-featured-article-description > p {
+                                font-size: 1.2rem;
+                                line-height: 1.4em;
+                                max-width: 75%;
+                            }
+                            .category-featured-article-footnote {
+                                font-size: 1.1rem;
+                                opacity: 0.5;
+                            }
+                            .category-featured-article-footnote > span {
+                                margin-right: 2rem;
+                            }
+                            .category-featured-article-date {
+                                font-family: monospace;
+                            }
+                            </style>
+                            <div class="category-featured-article">
+                                <div class="category-featured-article-inner">
+                                    <a class="" style="display: block; height: 364px;">
+                                        <div class="category-featured-article-headnote">
+                                            最新文章
+                                        </div>
+                                        <h2 class="category-featured-article-title" style="text-align: left;">我是文章标题</h2>
+                                        <div class="category-featured-article-description">
+                                            <p>我是文章摘要，我是文章摘要，我是文章摘要，我是文章摘要，我是文章摘要，我是文章摘要，我是文章摘要，我是文章摘要，我是文章摘要，我是文章摘要……</p>
+                                        </div>
+                                        <div class="category-featured-article-footnote">
+                                            <span class="category-featured-article-date">2021-04-01 14:53</span>
+                                            <span class="category-featured-article-author">约翰史密斯</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <script type="text/javascript">
+                                // document.querySelector('.category-featured-article-inner a').style.height = document.querySelector('.category-featured-article-inner a').offsetHeight + 'px';
+                                </script>
+                            </div>
+                        </div>
+                        <!-- 以下是普通文章 -->
+                        <div class="col-12 col-lg-4">
+                            <div class="row category-featured-article-companion-container">
+                                <style media="screen">
+                                .category-featured-article-companion-container {
+                                    padding: 0;
+                                }
+                                .category-featured-article-companion-container > div {
+                                    /* padding-left: 0; */
+                                    /* padding-right: 0; */
+                                }
+                                </style>
+                                <script type="text/javascript">
+                                let sampleEntryData1 = {
+                                    title: '我是文章标题，我可能会很长，别忘了留够空间',
+                                    date: (new Date()).toISOString().slice(0, 16).replace('T', ' '),
+                                    author: '约翰史密斯',
+                                    colsLg: 12
+                                };
+                                HtmlModuleLoader.load('category--generic-entry', 0, sampleEntryData1);
+                                HtmlModuleLoader.load('category--generic-entry', 1, sampleEntryData1);
+                                </script>
+                            </div>
+                        </div>
+                        <!-- 以下是真正的普通文章 -->
+                        <!-- <div class=""> -->
+                            <script type="text/javascript">
+                            let sampleEntryData2 = {
+                                title: '我是文章标题，我可能会很长，别忘了留够空间',
+                                date: (new Date()).toISOString().slice(0, 16).replace('T', ' '),
+                                author: '约翰史密斯',
+                                colsLg: 4
+                            };
+                            for (var i = 4; i < 30; i++) {
+                                HtmlModuleLoader.load('category--generic-entry', i, sampleEntryData2);
+                            };
+                            </script>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-section" data-section-id="global--footer" style="">
+                <style media="screen">
+                .app-section[data-section-id="global--footer"] {
+                    font-size: 1.1rem;
+                    line-height: 1.5rem;
+                    /* background: #FFF; */
+                    background: #F0F0F0;
+                    padding: 80px 0;
+                }
+                </style>
+                <nav class="">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-9">
+                                This is the footer text. Write some content here.
+                            </div>
+                            <div class="col-12 col-lg-3">
+                                更小的区域，可以放二维码等内容
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <footer class="negligible-footer" style="
+                font-size: 1rem; color: #BBB;
+                /* text-align: center; */
+                background: #F0F0F0;
+                padding: 3rem 0;
+            ">
+                <style media="screen">
+                footer.negligible-footer * {
+                    font-family: inherit;
+                    font-size: inherit;
+                    color: inherit;
+                }
+                </style>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Photo by <a href="https://unsplash.com/@solenfeyissa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Solen Feyissa</a> on <a href="/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+                            <p>Photo by <a href="https://unsplash.com/@eiskonen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hans Eiskonen</a> on <a href="/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+                            <p>Photo by <a href="https://unsplash.com/@xianyuhao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Xianyu hao</a> on <a href="/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
