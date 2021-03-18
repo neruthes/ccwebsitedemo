@@ -1,22 +1,37 @@
-<div class="col-12 col-lg-{{colsLg}}" data-subsection-name="category--generic-entry">
+<div class="col-12 col-lg-{{colsLg}}" data-subsection-name="category--generic-entry" data-special-theme="{{theme}}">
     <style media="screen">
-    [data-subsection-name="category--generic-entry"] {
-
+    [data-subsection-name="category--generic-entry"][data-special-theme="common"] a {
+        background: #F0F0F0;
+    }
+    [data-subsection-name="category--generic-entry"][data-special-theme="alpha"] a {
+        background: #FEF044;
+    }
+    [data-subsection-name="category--generic-entry"][data-special-theme="beta"] a {
+        color: #FFF;
+        background: #DD3333;
+    }
+    [data-subsection-name="category--generic-entry"][data-special-theme="gamma"] a {
+        color: #FFF;
+        background: #11151D;
     }
     [data-subsection-name="category--generic-entry"] * {
     }
     [data-subsection-name="category--generic-entry"] a {
         color: inherit;
         text-decoration: inherit;
-        background: #F5F5F5;
         display: block;
-        height: 170px;
-        padding: 2rem 2rem 0;
         margin: 0 0 24px;
-        transition: all 200ms ease;
     }
     [data-subsection-name="category--generic-entry"] a:hover {
-        background: #DDD;
+    }
+    [data-subsection-name="category--generic-entry"] a > .category--generic-entry--inner {
+        background: rgba(0, 0, 0, 0.0);
+        height: 170px;
+        padding: 2rem 2rem 0;
+        transition: all 200ms ease;
+    }
+    [data-subsection-name="category--generic-entry"] a:hover > .category--generic-entry--inner {
+        background: rgba(0, 0, 0, 0.15);
         padding: 1.5rem 2rem 0;
     }
     [data-subsection-name="category--generic-entry"] a h2 {
@@ -32,7 +47,7 @@
     }
     [data-subsection-name="category--generic-entry"] a .category-generic-article-footnote {
         font-size: 1.1rem;
-        opacity: 0.5;
+        opacity: 0.65;
     }
     [data-subsection-name="category--generic-entry"] a .category-generic-article-footnote > span {
         margin-right: 2rem;
@@ -42,7 +57,7 @@
     }
     </style>
     <a href="#">
-        <div class="">
+        <div class="category--generic-entry--inner">
             <h2 class="category-generic-article-title">{{title}}</h2>
             <div class="category-generic-article-footnote">
                 <span class="category-generic-article-date">{{date}}</span>

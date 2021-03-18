@@ -5,13 +5,13 @@
         <title>CryptoC</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
         <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
         <link rel="stylesheet" href="/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/lib.css">
         <link rel="stylesheet" href="/css/main-global.css">
-        <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet"> -->
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet"> -->
         <script type="text/javascript" src="/js/libs.js"></script>
         <script type="text/javascript" src="/js/watchers.js"></script>
         <script type="text/javascript" src="/js/HtmlModuleLoader.js"></script>
@@ -136,7 +136,8 @@
                                     title: '我是文章标题，我可能会很长，别忘了留够空间',
                                     date: (new Date()).toISOString().slice(0, 16).replace('T', ' '),
                                     author: '约翰史密斯',
-                                    colsLg: 12
+                                    colsLg: 12,
+                                    theme: 'common'
                                 };
                                 HtmlModuleLoader.load('category--generic-entry', 0, sampleEntryData1);
                                 HtmlModuleLoader.load('category--generic-entry', 1, sampleEntryData1);
@@ -150,10 +151,47 @@
                                 title: '我是文章标题，我可能会很长，别忘了留够空间',
                                 date: (new Date()).toISOString().slice(0, 16).replace('T', ' '),
                                 author: '约翰史密斯',
-                                colsLg: 4
+                                colsLg: 4,
+                                theme: 'common'
                             };
-                            for (var i = 4; i < 30; i++) {
-                                HtmlModuleLoader.load('category--generic-entry', i, sampleEntryData2);
+                            let sampleEntryData3 = {
+                                title: '我是文章标题，我可能会很长，别忘了留够空间',
+                                date: (new Date()).toISOString().slice(0, 16).replace('T', ' '),
+                                author: '约翰史密斯',
+                                colsLg: 4,
+                                theme: 'alpha'
+                            };
+                            let sampleEntryData4 = {
+                                title: '我是文章标题，我可能会很长，别忘了留够空间',
+                                date: (new Date()).toISOString().slice(0, 16).replace('T', ' '),
+                                author: '约翰史密斯',
+                                colsLg: 4,
+                                theme: 'beta'
+                            };
+                            let sampleEntryData5 = {
+                                title: '我是文章标题，我可能会很长，别忘了留够空间',
+                                date: (new Date()).toISOString().slice(0, 16).replace('T', ' '),
+                                author: '约翰史密斯',
+                                colsLg: 4,
+                                theme: 'gamma'
+                            };
+                            let sampleEntryData6 = {
+                                title: '我是文章标题，我可能会很长，别忘了留够空间',
+                                date: (new Date()).toISOString().slice(0, 16).replace('T', ' '),
+                                author: '约翰史密斯',
+                                colsLg: 4,
+                                theme: 'sigma'
+                            };
+                            for (var i = 4; i < 43; i++) {
+                                if (i % 5 === 0) {
+                                    HtmlModuleLoader.load('category--generic-entry', i, sampleEntryData3);
+                                } else if (i % 8 === 0) {
+                                    HtmlModuleLoader.load('category--generic-entry', i, sampleEntryData4);
+                                } else if (i % 11 === 0) {
+                                    HtmlModuleLoader.load('category--generic-entry', i, sampleEntryData5);
+                                } else {
+                                    HtmlModuleLoader.load('category--generic-entry', i, sampleEntryData2);
+                                };
                             };
                             </script>
                         <!-- </div> -->
