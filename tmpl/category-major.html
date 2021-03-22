@@ -25,7 +25,7 @@
             HtmlModuleLoader.load('global--navbar', 0, {});
             HtmlModuleLoader.load('global--categories-navbar', 0, { 'categoryName': '综合' });
             </script>
-            <div class="app-section" id="section-article-categories" data-section-id="category--major-articles" data-section-type="generic" data-section-tone="light" style="">
+            <div class="app-section" id="section-article-categories" data-section-id="category--major-articles" data-section-type="" data-section-tone="light" style="">
                 <style media="screen">
                 .app-section[data-section-id="category--major-articles"] {
                     padding: 12px;
@@ -43,82 +43,16 @@
                     </div> -->
                     <div class="row">
                         <!-- Featured article -->
-                        <div class="col-12 col-lg-8">
-                            <style media="screen">
-                            .category-featured-article {
-                                text-align: left;
-                                margin: 0 0 24px;
-                                background: #000 url('../img/hans-eiskonen-7VuFvHYrF0A-unsplash.jpg') scroll center no-repeat;
-                            }
-                            .category-featured-article-inner {
-                                position: relative;
-                            }
-                            .category-featured-article-inner a {
-                                color: inherit;
-                                background: rgba(254, 248, 68, 0.85);
-                                padding: calc(7rem) 2rem 4rem;
-                                text-decoration: inherit;
-                                display: block;
-                                cursor: pointer;
-                                transition: all 200ms ease;
-                            }
-                            .category-featured-article-inner a:hover {
-                                background: rgba(254, 248, 68, 0.97);
-                                padding: calc(6.3rem) 2rem 4rem;
-                            }
-                            .category-featured-article-headnote {
-                                color: #FEF044;
-                                font-size: 1.1rem;
-                                background: #000;
-                                /* border: 1px solid #000; */
-                                border-radius: 100px;
-                                position: absolute;
-                                top: 2rem;
-                                left: 2rem;
-                                padding: 0.3rem 0.8rem;
-                            }
-                            .category-featured-article-title {
-                                font-size: 2rem;
-                                padding: 0 0 1rem;
-                                margin: 0;
-                            }
-                            .category-featured-article-description > p {
-                                font-size: 1.2rem;
-                                line-height: 1.4em;
-                                max-width: 75%;
-                            }
-                            .category-featured-article-footnote {
-                                font-size: 1.1rem;
-                                opacity: 0.5;
-                            }
-                            .category-featured-article-footnote > span {
-                                margin-right: 2rem;
-                            }
-                            .category-featured-article-date {
-                                font-family: monospace;
-                            }
-                            </style>
-                            <div class="category-featured-article">
-                                <div class="category-featured-article-inner">
-                                    <a class="" style="display: block; height: 364px;">
-                                        <div class="category-featured-article-headnote">
-                                            最新文章
-                                        </div>
-                                        <h2 class="category-featured-article-title" style="text-align: left;">我是文章标题</h2>
-                                        <div class="category-featured-article-description">
-                                            <p>我是文章摘要，我是文章摘要，我是文章摘要，我是文章摘要，我是文章摘要，我是文章摘要，我是文章摘要，我是文章摘要，我是文章摘要，我是文章摘要……</p>
-                                        </div>
-                                        <div class="category-featured-article-footnote">
-                                            <span class="category-featured-article-date">2021-04-01 14:53</span>
-                                            <span class="category-featured-article-author">约翰史密斯</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <script type="text/javascript">
-                                // document.querySelector('.category-featured-article-inner a').style.height = document.querySelector('.category-featured-article-inner a').offsetHeight + 'px';
-                                </script>
-                            </div>
-                        </div>
+                        <script type="text/javascript">
+                        let sampleEntryData0 = {
+                            title: '我是文章标题，我可能会很长，别忘了留够空间',
+                            date: (new Date()).toISOString().slice(0, 16).replace('T', ' '),
+                            author: '约翰史密斯',
+                            colsLg: 12,
+                            theme: 'common'
+                        };
+                        HtmlModuleLoader.load('category--generic-entry-2x2', 0, sampleEntryData0);
+                        </script>
                         <!-- 以下是普通文章 -->
                         <div class="col-12 col-lg-4">
                             <div class="row category-featured-article-companion-container">
@@ -182,7 +116,7 @@
                                 colsLg: 4,
                                 theme: 'sigma'
                             };
-                            for (var i = 4; i < 43; i++) {
+                            for (var i = 3; i < 12; i++) {
                                 if (i % 5 === 0) {
                                     HtmlModuleLoader.load('category--generic-entry', i, sampleEntryData3);
                                 } else if (i % 8 === 0) {
@@ -195,6 +129,70 @@
                             };
                             </script>
                         <!-- </div> -->
+                    </div>
+
+                    <script type="text/javascript">
+                    let sampleEntryDataDuo1 = {
+                        title: '我是文章标题，我可能会很长，别忘了留够空间',
+                        date: (new Date()).toISOString().slice(0, 16).replace('T', ' '),
+                        author: '约翰史密斯',
+                        colsLg: 12,
+                        theme: 'common'
+                    };
+                    </script>
+                    <!-- 测试效果 -->
+                    <div class="row">
+                        <div class="col-12 col-lg-4 entry-duo">
+                            <script type="text/javascript">
+                            HtmlModuleLoader.load('category--generic-entry', 101, sampleEntryDataDuo1);
+                            HtmlModuleLoader.load('category--generic-entry', 102, sampleEntryDataDuo1);
+                            </script>
+                        </div>
+                        <script type="text/javascript">
+                        HtmlModuleLoader.load('category--generic-entry-1x2', 102, sampleEntryData0);
+                        </script>
+                        <div class="col-12 col-lg-4 entry-duo">
+                            <script type="text/javascript">
+                            HtmlModuleLoader.load('category--generic-entry', 101, sampleEntryDataDuo1);
+                            HtmlModuleLoader.load('category--generic-entry', 102, sampleEntryDataDuo1);
+                            </script>
+                        </div>
+                    </div>
+                    <!-- 测试效果 -->
+                    <div class="row">
+                        <script type="text/javascript">
+                        HtmlModuleLoader.load('category--generic-entry-1x2', 102, sampleEntryData0);
+                        </script>
+                        <div class="col-12 col-lg-4 entry-duo">
+                            <script type="text/javascript">
+                            HtmlModuleLoader.load('category--generic-entry', 101, sampleEntryDataDuo1);
+                            HtmlModuleLoader.load('category--generic-entry', 102, sampleEntryDataDuo1);
+                            </script>
+                        </div>
+                        <div class="col-12 col-lg-4 entry-duo">
+                            <script type="text/javascript">
+                            HtmlModuleLoader.load('category--generic-entry', 101, sampleEntryDataDuo1);
+                            HtmlModuleLoader.load('category--generic-entry', 102, sampleEntryDataDuo1);
+                            </script>
+                        </div>
+                    </div>
+                    <!-- 测试效果 -->
+                    <div class="row">
+                        <div class="col-12 col-lg-4 entry-duo">
+                            <script type="text/javascript">
+                            HtmlModuleLoader.load('category--generic-entry', 101, sampleEntryDataDuo1);
+                            HtmlModuleLoader.load('category--generic-entry', 102, sampleEntryDataDuo1);
+                            </script>
+                        </div>
+                        <div class="col-12 col-lg-4 entry-duo">
+                            <script type="text/javascript">
+                            HtmlModuleLoader.load('category--generic-entry', 101, sampleEntryDataDuo1);
+                            HtmlModuleLoader.load('category--generic-entry', 102, sampleEntryDataDuo1);
+                            </script>
+                        </div>
+                        <script type="text/javascript">
+                        HtmlModuleLoader.load('category--generic-entry-1x2', 102, sampleEntryData0);
+                        </script>
                     </div>
                 </div>
             </div>

@@ -12,17 +12,14 @@ HtmlModuleLoader.load = function (modName, instanceIndex, options) {
     xhr.open('GET', `/html-modules/${modName}.html`);
     xhr.send();
     xhr.onload = function (e) {
-        // console.log(`[data-HtmlModuleLoader-placeholder="${modName}"][data-HtmlModuleLoader-placeholderIndex="${instanceIndex}"]`);
         if (e.target.status === 200 || e.target.status === 304) {
             HtmlModuleCache[modName] = e.target.responseText;
-            // console.log(document.querySelector(`[data-HtmlModuleLoader-placeholder="${modName}"][data-HtmlModuleLoader-placeholderIndex="${instanceIndex}"]`));
             HtmlModuleLoader.put(modName, options, instanceIndex, prng);
         } else {
             console.log(`HtmlModuleLoader: Error: Cannot load ${modName} (${e.target.status})`);
         };
     };
 };
-
 
 HtmlModuleLoader.put = function (modName, options, instanceIndex, prng) {
     document.querySelector(`[data-HtmlModuleLoader-placeholder="${modName}"][data-HtmlModuleLoader-placeholderIndex="${instanceIndex}"][data-prng="${prng}"]`).outerHTML = HtmlModuleLoader.render(HtmlModuleCache[modName], options);
