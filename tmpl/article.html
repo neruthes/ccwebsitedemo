@@ -126,11 +126,67 @@
                                 <p>Nulla fermentum iaculis eros ut venenatis. Mauris felis massa, iaculis vel egestas et, varius at ante. Phasellus non lectus at nibh vehicula dapibus sed nec mi. Curabitur nulla lacus, efficitur at eleifend maximus, tempus eget enim. Proin id commodo justo, in scelerisque quam. Fusce et feugiat sem. Vivamus sollicitudin eget arcu id efficitur. Quisque ac sagittis dui. Fusce condimentum nunc semper, suscipit tellus sit amet, vulputate nunc. Curabitur condimentum libero et ornare interdum. </p>
 
                             </div>
+                            <div class="separation-line--dark--full" style="margin: 0 0 4rem;">
+                            </div>
                             <div class="article-content--footer1">
                                 这里可以放关于作者
+                                <div class="">
+                                </div>
                             </div>
                             <div class="article-content--footer2">
-                                这里可以放左右导航
+                                <style media="screen">
+                                    .article-content--footer2-prevnext {
+                                        padding: 1rem 0;
+                                    }
+                                    .article-content--footer2-prevnext a {
+                                        display: block;
+                                        color: inherit;
+                                        text-decoration: inherit;
+                                        background: #F0F0F0;
+                                        padding: 1rem;
+                                        margin: 0 0 1rem 0;
+                                        transition: all 200ms ease;
+                                    }
+                                    .article-content--footer2-prevnext a:hover {
+                                        background: #DDD;
+                                    }
+                                    .article-content--footer2-prevnext a .target-article {
+                                        vertical-align: top;
+                                    }
+                                    .article-content--footer2-prevnext a .target-article .target-headnote {
+                                        font-size: 1.1rem;
+                                        color: #666;
+                                        line-height: 34px;
+                                        display: inline-block;
+                                        margin: 0 1rem 0 0;
+                                    }
+                                    .article-content--footer2-prevnext a .target-article .target-article-title {
+                                        font-size: 1.6rem;
+                                        color: #000;
+                                        line-height: 34px;
+                                        display: inline-block;
+                                    }
+                                </style>
+                                <div class="">
+                                    <div class="article-content--footer2-prevnext">
+                                        <a href="#">
+                                            <div class="target-article target-article-next">
+                                                <div class="target-headnote">下一篇</div>
+                                                <div class="target-article-title">
+                                                    苟利国家生死以
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="target-article target-article-prev">
+                                                <div class="target-headnote">上一篇</div>
+                                                <div class="target-article-title">
+                                                    岂因祸福避趋之
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                             <div class="article-content--footer3">
                                 这里可以放推荐文章
@@ -140,53 +196,9 @@
                 </div>
             </div>
 
-            <div class="app-section" data-section-id="global--footer" style="">
-                <style media="screen">
-                .app-section[data-section-id="global--footer"] {
-                    font-size: 1.1rem;
-                    line-height: 1.5rem;
-                    /* background: #FFF; */
-                    background: #F0F0F0;
-                    padding: 80px 0;
-                }
-                </style>
-                <nav class="">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-lg-9">
-                                This is the footer text. Write some content here.
-                            </div>
-                            <div class="col-12 col-lg-3">
-                                更小的区域，可以放二维码等内容
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-
-            <footer class="negligible-footer" style="
-                font-size: 1rem; color: #BBB;
-                /* text-align: center; */
-                background: #F0F0F0;
-                padding: 3rem 0;
-            ">
-                <style media="screen">
-                footer.negligible-footer * {
-                    font-family: inherit;
-                    font-size: inherit;
-                    color: inherit;
-                }
-                </style>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <p>Photo by <a href="https://unsplash.com/@solenfeyissa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Solen Feyissa</a> on <a href="/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
-                            <p>Photo by <a href="https://unsplash.com/@eiskonen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hans Eiskonen</a> on <a href="/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
-                            <p>Photo by <a href="https://unsplash.com/@xianyuhao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Xianyu hao</a> on <a href="/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            <script type="text/javascript">
+            HtmlModuleLoader.load('global--footer', 0, {});
+            </script>
         </div>
     </body>
 </html>

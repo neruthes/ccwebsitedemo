@@ -71,6 +71,7 @@
     <script type="text/javascript">
         window.addEventListener('scroll', function (e) {
             if (PageConfigs['needGlobalNavBar'] !== true) {
+                console.log(`PageConfigs['needGlobalNavBar']: ${PageConfigs['needGlobalNavBar']}`);
                 document.body.setAttribute('data-navbar-solid-bgcolor', 'true');
                 return 0;
             };

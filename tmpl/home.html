@@ -5,13 +5,13 @@
         <title>CryptoC</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
         <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
         <link rel="stylesheet" href="/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/lib.css">
         <link rel="stylesheet" href="/css/main-global.css">
-        <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet"> -->
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet"> -->
         <script type="text/javascript">
         const PageConfigs = {
             'needGlobalNavBar': true
@@ -25,7 +25,7 @@
     <body>
         <div class="grand-cont">
             <script type="text/javascript">
-            HtmlModuleLoader.load('global--navbar', 0);
+            HtmlModuleLoader.load('global--navbar', 0, {});
             </script>
             <div class="app-section" id="section-cover" data-section-id="home--cover" data-section-tone="light" style="min-height: 66vh;">
                 <style media="screen">
@@ -356,7 +356,7 @@
                             <strong style="padding: 0 0 30px;">什么是开放艺术宇宙？</strong>
                         </div>
                         <div class="col-12 col-lg-8">
-                            <p>Blah blah blah...</p>
+                            <p>在这里填充文案……</p>
                         </div>
                     </div>
                 </div>
@@ -410,32 +410,10 @@
                 </div>
             </div>
 
-            <div class="app-section" data-section-id="global--footer" style="">
-                <style media="screen">
-                .app-section[data-section-id="global--footer"] {
-                    font-size: 1.1rem;
-                    line-height: 1.5rem;
-                    /* background: #FFF; */
-                    background: #F0F0F0;
-                    padding: 80px 0;
-                }
-                </style>
-                <nav class="">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-lg-9">
-                                This is the footer text. Write some content here.
-                            </div>
-                            <div class="col-12 col-lg-3">
-                                更小的区域，可以放二维码等内容
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
+
 
             <script type="text/javascript">
-            HtmlModuleLoader('global--footer', 0, {});
+            HtmlModuleLoader.load('global--footer', 0, {});
             </script>
         </div>
     </body>
